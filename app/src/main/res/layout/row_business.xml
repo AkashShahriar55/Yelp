@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp13">
+
+    <ImageView
+        android:id="@+id/iv_imageView"
+        android:layout_width="@dimen/dp80"
+        android:layout_height="@dimen/dp80"
+        android:background="@drawable/bg_image_border"
+        android:padding="@dimen/dp3"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/dp4"
+        android:paddingLeft="@dimen/dp6">
+
+        <TextView
+            android:id="@+id/tv_business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp1"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/black" />
+
+        <RatingBar
+            android:id="@+id/rb_ratingBar"
+            style="@android:style/Widget.Holo.RatingBar.Small"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:progressTint="@color/purple_500"
+            android:numStars="5"
+            android:padding="@dimen/dp1"
+            android:isIndicator="true"
+            android:focusable="false"
+            android:rating="4"
+            android:stepSize="0.5" />
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="@dimen/dp1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_business_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="@dimen/dp1"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
